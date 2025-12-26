@@ -7,9 +7,9 @@ metadata:
 spec:
   project: default                 # ArgoCD Project (logical grouping of apps)
   source:
-    repoURL: https://github.com/AKASH@1729/full-stack_chatApp.git   # Git repo containing manifests
+    repoURL: https://github.com/AKASH1729/full-stack_chatApp.git   # Git repo containing manifests
     targetRevision: main           # Git branch or tag (e.g., main, dev, release-1.0)
-    path: kubernetes/chatapp   # Path inside repo where manifests live
+    path: kubernetes   # Path inside repo where manifests live
   destination:
     server: https://172.31.86.22:33893     # Target cluster API
     namespace: default             # Namespace in which to deploy the app
